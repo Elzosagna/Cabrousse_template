@@ -1,5 +1,6 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
@@ -25,9 +26,12 @@ import { XewXewComponent } from './xew-xew/xew-xew.component';
         RouterModule,
         AppRoutingModule,
         AccueilModule,
+        MDBBootstrapModule.forRoot(),
         CollapseModule.forRoot()
     ],
     providers: [],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    schemas: [
+    NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }
