@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MatCardModule } from '@angular/material';
 @Component({
   selector: 'app-actualites',
   templateUrl: './actualites.component.html',

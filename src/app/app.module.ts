@@ -1,6 +1,5 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
@@ -10,14 +9,16 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ActualitesComponent } from './actualites/actualites.component';
-import { XewXewComponent } from './xew-xew/xew-xew.component';
+import { JournalyceeComponent } from './journalycee/journalycee.component';
+import { ExerciceComponent } from './exercice/exercice.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
         ActualitesComponent,
-        XewXewComponent
+        JournalyceeComponent,
+        ExerciceComponent
     ],
     imports: [
         BrowserAnimationsModule,
@@ -26,12 +27,9 @@ import { XewXewComponent } from './xew-xew/xew-xew.component';
         RouterModule,
         AppRoutingModule,
         AccueilModule,
-        MDBBootstrapModule.forRoot(),
         CollapseModule.forRoot()
     ],
     providers: [],
-    bootstrap: [AppComponent],
-    schemas: [
-    NO_ERRORS_SCHEMA ]
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
