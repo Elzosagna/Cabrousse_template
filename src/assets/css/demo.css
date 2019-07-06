@@ -503,6 +503,16 @@
 .section_xewxew{
   padding: 50px;
 }
+
+.section_xewxewRow{
+  margin-top: -15px;
+}
+
+.descripjrnal{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .xew_xew{
   float: right;
   width: 300px;
@@ -525,4 +535,15 @@
 }
 .xew_xewA{
   color: #0d7590 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .imgjrnal {
+    /* visibility: hidden; */
+    display:none;
+  }
+  .descripjrnal{
+    margin-top: -20px !important;
+    margin-bottom: -3rem !important;
+  }
 }
